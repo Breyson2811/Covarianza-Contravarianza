@@ -1,5 +1,5 @@
 public class X{
-  public Cantante foo(Persona p){
+  public Cantante foo(Alumno p){
     p.cantar();
     return p;
   }
