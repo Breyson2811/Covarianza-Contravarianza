@@ -1,6 +1,6 @@
 public class X{
-  public Persona foo(Persona p){
-    p.add();
+  public Cantante foo(Persona p){
+    p.cantar();
     return p;
   }
 }
