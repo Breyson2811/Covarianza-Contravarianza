@@ -4,9 +4,9 @@ class Main{
     p.cantar();
     Alumno a  = new Alumno("Jose", 14, 123);
     a.show();
-
     Y y = new Y();
-    System.out.println("aaaa");
-    y.foo(a);
+    System.out.println("-----------");
+    //Cantante  c = y.foo(c);
+    Persona p1 = y.foo(a);   
   }
 } 
