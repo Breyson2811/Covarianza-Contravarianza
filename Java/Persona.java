@@ -11,4 +11,8 @@ public class Persona implements Cantante{
   public void cantar(){
     System.out.println("LA LA LA ... ");
   }
+
+  public void add(){
+    edad+=1;
+  }
 }
