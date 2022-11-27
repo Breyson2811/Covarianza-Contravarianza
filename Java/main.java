@@ -6,7 +6,6 @@ class Main{
     a.show();
 
     Y y = new Y();
-    y.foo(p);
     System.out.println("aaaa");
     y.foo(a);
   }
