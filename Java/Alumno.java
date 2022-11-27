@@ -1,4 +1,4 @@
-public class Alumno extends Persona{
+public class Alumno extends Persona implements Cantante{
 
   int ID;
   
