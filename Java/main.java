@@ -7,6 +7,8 @@ class Main{
     Y y = new Y();
     System.out.println("-----------");
     //Cantante  c = y.foo(c);
-    Persona p1 = y.foo(a);   
+    Persona p1 = y.foo(a);
+    Persona p2 = y.foo(p);
+    Persona p3 = y.foo(a);   
   }
 } 
