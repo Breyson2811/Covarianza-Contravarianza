@@ -32,20 +32,20 @@ class D: public C{
 
 class X{
   public:
-     B foo(B c);
+     B foo(A c);
 };
 
 class Y{
   public:
-    B foo(B c);
+    B foo(A c);
 };
 
-B X::foo(B c){
+B X::foo(A c){
   c.goo();
   return c;
 }
 
-B Y::foo(B c){
+B Y::foo(A c){
   c.goo();
   return c;
 }
