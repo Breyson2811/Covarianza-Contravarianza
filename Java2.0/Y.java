@@ -1,6 +1,6 @@
 public class Y extends X{
   @Override
-  public Persona foo(Estudiante p){
+  public SerVivo foo(SerVivo p){
     p.comer();
     return p;
   }
