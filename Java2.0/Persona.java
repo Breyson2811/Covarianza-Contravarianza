@@ -8,6 +8,6 @@ public class Persona extends Animal implements SerVivo{
   }
   @Override
   public void comer(){
-    System.out.println("Aniaml Comiendo");
+    System.out.println("Persona Comiendo");
   }
 }

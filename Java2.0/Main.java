@@ -5,9 +5,9 @@ public class Main{
     Persona p = new Persona("Human", 16);
     Estudiante e = new Estudiante("Estudiante", 21, 123123);
     Y y = new Y();    
-    
-    Animal n1 = y.foo(a);//Animal
+    Persona p2 = new Persona("r",12);
+    Animal n1 = y.foo(p2);//Animal
     Persona p1 = y.foo(p);//Persona
-    Estudiante e1= y.foo(e);//Estudiante
+    SerVivo e1= y.foo(e);//Estudiante
   }
 }

@@ -1,5 +1,5 @@
 public class X{
-  public SerVivo foo(SerVivo p){ 
+  public Persona foo(Persona p){ 
     p.comer();
     return p;
   }
