@@ -6,8 +6,8 @@ public class Main{
     Estudiante e = new Estudiante("Estudiante", 21, 123123);
     Y y = new Y();    
     
-    y.foo(a);//Animal
-    y.foo(p);//Persona
-    y.foo(e);//Estudiante
+    Animal n1 = y.foo(a);//Animal
+    Persona p1 = y.foo(p);//Persona
+    Estudiante e1= y.foo(e);//Estudiante
   }
 }
