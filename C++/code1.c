@@ -32,30 +32,29 @@ class D: public C{
 
 class X{
   public:
-     B foo(A c);
+     B* foo(A* c);
 };
 
 class Y{
   public:
-    B foo(A c);
+    B* foo(A* c);
 };
 
-B X::foo(A c){
-  c.goo();
-  return c;
+B* X::foo(A* c){
+  c->goo();
+  return new B();
 }
 
-B Y::foo(A c){
-  c.goo();
-  return c;
+B* Y::foo(A* c){
+  c->goo();
+  return new B();
 }
 
 int main(){
   C c;
-  D d;
   Y y;
-  B b;
-  B d1 = y.foo(d);
-  d1.goo();
+  D* d = new D();
+  B* d1 = y.foo(d);
+  d1->goo();
   return 1;
 }
