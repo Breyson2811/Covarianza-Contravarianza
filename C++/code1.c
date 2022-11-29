@@ -3,20 +3,59 @@
 #include <stdio.h>
 class A{
   public:
-    virtual void foo() = 0;
+    virtual void goo() = 0;
 };
 
 class B: public A{
   public:
-    void foo();
+    void goo() override{
+      std::cout << "B" << std::endl;
+    }
+
 };
 
-void B::foo()override{
-  std::cout << "B" << std::endl;
+class C: public B{
+  public:
+    void goo() override{
+      std::cout << "C" << std::endl;
+    }
+
+};
+
+class D: public C{
+  public:
+    void goo() override{
+      std::cout << "D" << std::endl;
+    }
+
+};
+
+class X{
+  public:
+     B foo(B c);
+};
+
+class Y{
+  public:
+    B foo(B c);
+};
+
+B X::foo(B c){
+  c.goo();
+  return c;
+}
+
+B Y::foo(B c){
+  c.goo();
+  return c;
 }
 
 int main(){
+  C c;
+  D d;
+  Y y;
   B b;
-  b.foo();
+  B d1 = y.foo(d);
+  d1.goo();
   return 1;
 }
